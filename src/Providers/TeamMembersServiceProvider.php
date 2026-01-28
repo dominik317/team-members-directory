@@ -3,7 +3,7 @@
 namespace TeamMembersDirectory\Providers;
 
 use Themosis\Core\Support\ServiceProvider;
-use TeamMembersDirectory\PostTypes\TeamMembersPostType;
+use TeamMembersDirectory\PostTypes\TeamMemberPostType;
 use TeamMembersDirectory\Admin\TeamMemberFields;
 use TeamMembersDirectory\admin\TeamMemberSaveHandler;
 

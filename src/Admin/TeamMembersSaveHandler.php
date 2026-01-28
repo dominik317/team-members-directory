@@ -2,7 +2,7 @@
 
 namespace TeamMembersDirectory\Admin;
 
-use TeamMembersq\Services\TeamMemberValidator;
+use TeamMembers\Services\TeamMemberValidator;
 
 class TeamMemberSaveHandler{
     public static function register(): void{

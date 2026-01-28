@@ -4,7 +4,7 @@ namespace TeamMembersDirectory\Services;
 
 class TeamMemberValidator{
     public function validate(array $data): array{
-        $errorrs=[];
+        $errors=[];
         
         if(empty($data['full_name'])){
             $errors[] = 'Full name is required';
