@@ -1,0 +1,13 @@
+{
+    "name": "dominik317/team-members-directory",
+    "description:": "Team Members Directory plugin",
+    "type": "wordpress-plugin",
+    "autoload": {
+    "psr-4": {
+        "TeamMembersDirectory\\": "src/"
+    }
+    },
+        "require": {
+            "php": ">=8.1"
+    }
+}
