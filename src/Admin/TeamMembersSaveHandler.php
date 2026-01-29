@@ -58,6 +58,14 @@ class TeamMembersSaveHandler{
             return;
         }
 
+        // Skip validation when trashing
+        if ($post->post_status === 'trash') {
+            return;
+        }
+        if (isset($_GET['action']) && $_GET['action'] === 'trash') {
+            return;
+        }
+
         // Check if ACF is available
         if (!function_exists('get_field')) {
             return;
