@@ -1,11 +1,11 @@
 
 <div class="team-member-card">
-    <?php if ($photo): ?>
+    <?php if ($photo): 
+        $image_url = wp_get_attachment_url($photo);
+        ?>
         <div class="team-member-photo">
-            <img src="<?php echo esc_url($photo['url']); ?>" 
-                 alt="<?php echo esc_attr($full_name); ?>"
-                 width="<?php echo esc_attr($photo['width']); ?>"
-                 height="<?php echo esc_attr($photo['height']); ?>">
+            <img src="<?php echo esc_url($image_url); ?>" 
+                 alt="<?php echo esc_attr($full_name); ?>">
         </div>
     <?php endif; ?>
 
