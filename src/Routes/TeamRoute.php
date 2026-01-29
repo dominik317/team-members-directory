@@ -2,6 +2,8 @@
 
 namespace TeamMembersDirectory\Routes;
 
+use TeamMembersDirectory\Controllers\TeamMemberController;
+
 class TeamRoute
 {
     public static function register(): void
@@ -42,19 +44,10 @@ class TeamRoute
 
     private static function render(): void
     {
-        // Query team members
-        $args = [
-            'post_type' => 'team_member',
-            'posts_per_page' => -1,
-            'orderby' => 'title',
-            'order' => 'ASC',
-            'post_status' => 'publish',
-        ];
-
-        $query = new \WP_Query($args);
+        //Using controller we get the team members
+        $query = TeamMemberController::getTeamMembers();
 
         // Load template
         include __DIR__ . '/../../views/team-page.php';
     }
 }
-
