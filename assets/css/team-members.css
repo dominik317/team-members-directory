@@ -25,10 +25,10 @@
 
 .team-member-photo img {
     width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    height: 150px !important;
+    border-radius: 50% !important;
     object-fit: cover;
-    border: 3px solid #f0f0f0;
+    border: 3px solid #f0f0f0 !important;
 }
 
 .team-member-name {
