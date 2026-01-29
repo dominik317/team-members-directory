@@ -1,7 +1,9 @@
 # Composer dependencies
 /vendor/
-/composer.lock
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# PHPUnit
+.phpunit.result.cache
