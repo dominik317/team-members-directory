@@ -2,6 +2,7 @@
     "name": "dominik317/team-members-directory",
     "description": "Team Members Directory plugin",
     "type": "wordpress-plugin",
+    "license": "proprietary",
     "autoload": {
     "psr-4": {
         "TeamMembersDirectory\\": "src/"
