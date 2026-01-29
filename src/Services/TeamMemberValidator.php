@@ -10,11 +10,11 @@ class TeamMemberValidator{
             $errors[] = 'Full name is required';
         }
 
-        if($empty($data['role_title'])){
+        if(empty($data['role_title'])){
             $errors[] = 'Role title is required';
         }
 
-        if(!empty($data['email']) && !fiilter_var($data['email'], FILTER_VALIDATE_EMAIL)){
+        if(!empty($data['email']) && !filter_var($data['email'], FILTER_VALIDATE_EMAIL)){
             $errors[] = 'Email address is not valid';
         }
 
