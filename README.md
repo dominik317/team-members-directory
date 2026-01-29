@@ -117,11 +117,11 @@ composer test
 
 **Team Members List:**
 
-![Admin List](screenshots/admin-list.png)
+![Admin List](screenshots/admin-team-members.png)
 
 **Add/Edit Team Member:**
 
-![Admin Edit](screenshots/admin-edit.png)
+![Admin Edit](screenshots/admin-add-new.png)
 
 **Validation Errors:**
 
@@ -129,13 +129,13 @@ composer test
 
 ### Frontend Display
 
-**Shortcode Output:**
+**Shortcode Output & Route Output (`/team`):**
 
-![Frontend Shortcode](screenshots/frontend-shortcode.png)
+![Frontend Route](screenshots/team-members.png)
 
-**Route Output (`/team`):**
+**Shortcode Output & Route Output (`/team`) on Mobile:**
 
-![Frontend Route](screenshots/frontend-route.png)
+![Frontend Route](screenshots/team-members-mobile.png)
 
 ## Author
 
