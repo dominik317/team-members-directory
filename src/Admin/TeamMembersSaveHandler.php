@@ -53,6 +53,11 @@ class TeamMembersSaveHandler{
             return;
         }
 
+        // Skip validation for auto-drafts (new posts on page load)
+        if ($post->post_status === 'auto-draft') {
+            return;
+        }
+
         // Check if ACF is available
         if (!function_exists('get_field')) {
             return;
