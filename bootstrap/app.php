@@ -4,6 +4,7 @@ use TeamMembersDirectory\PostTypes\TeamMemberPostType;
 use TeamMembersDirectory\Admin\TeamMemberFields;
 use TeamMembersDirectory\Admin\TeamMembersSaveHandler;
 use TeamMembersDirectory\Shortcodes\TeamMembersShortcode;
+use TeamMembersDirectory\Routes\TeamRoute;
 
 defined('ABSPATH') || exit;
 
@@ -20,6 +21,8 @@ add_action('init', function () {
     TeamMembersSaveHandler::register();
     TeamMembersShortcode::register();
 });
+
+TeamRoute::register();
 
 //Load plugin styles
 add_action('wp_enqueue_scripts', function () {
