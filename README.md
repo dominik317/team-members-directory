@@ -111,6 +111,32 @@ composer test
 
 **Coverage:** 7 tests, 16 assertions (TeamMemberValidator service)
 
+## Screenshots
+
+### Admin Interface
+
+**Team Members List:**
+
+![Admin List](screenshots/admin-list.png)
+
+**Add/Edit Team Member:**
+
+![Admin Edit](screenshots/admin-edit.png)
+
+**Validation Errors:**
+
+![Admin Validation](screenshots/admin-validation.png)
+
+### Frontend Display
+
+**Shortcode Output:**
+
+![Frontend Shortcode](screenshots/frontend-shortcode.png)
+
+**Route Output (`/team`):**
+
+![Frontend Route](screenshots/frontend-route.png)
+
 ## Author
 
 **Dominik Sopic** | Version 0.1.0
