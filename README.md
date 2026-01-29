@@ -22,9 +22,33 @@ WordPress plugin for managing and displaying team members with Themosis Framewor
 
 ### Method 2: Composer Installation
 
+**Step 1:** Ensure your WordPress project's `composer.json` has `composer/installers` configured:
+
+```json
+{
+    "require": {
+        "composer/installers": "^2.0"
+    },
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}
+```
+
+**Step 2:** Install the plugin:
+
 ```bash
 composer require dominik317/team-members-directory
 ```
+
+This will automatically install the plugin to `wp-content/plugins/team-members-directory/`
+
+**Step 3:** Complete setup:
+1. Activate the plugin in **WordPress Admin → Plugins**
+2. Install and activate **Advanced Custom Fields (ACF)** plugin
+3. Flush permalinks: **Settings → Permalinks → Save Changes**
 
 ## Usage
 
